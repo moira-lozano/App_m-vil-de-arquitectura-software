@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">app_tester</string>
+
+    <string name="navigation_drawer_open">Abrir Menú</string>
+    <string name="navigation_drawer_close">Cerrar Menú</string>
+
+    <string name="inventario_label">Seleccionar Inventario</string>
+    <string name="subcategoria_label">Seleccionar Subcategoría</string>
+    <string name="inventario_prompt">Elige un inventario</string>
+    <string name="subcategoria_prompt">Elige una subcategoría</string>
+    <string name="desc_producto">Descripción del producto</string>
+
+</resources>

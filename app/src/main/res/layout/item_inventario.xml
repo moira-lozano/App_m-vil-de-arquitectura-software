@@ -1,0 +1,73 @@
+<!-- item_inventario.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Etiqueta para Descripción -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textDescripcion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Descripción"/>
+
+    <!-- Etiqueta para Unidad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidad:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textUnidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Unidad"/>
+
+    <!-- Etiqueta para Cantidad -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textCantidad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad"/>
+
+    <!-- Etiqueta para Fecha -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textFecha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Fecha"/>
+
+    <!-- Etiqueta para Nombre de Usuario -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario:"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/textNombreUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"/>
+</LinearLayout>

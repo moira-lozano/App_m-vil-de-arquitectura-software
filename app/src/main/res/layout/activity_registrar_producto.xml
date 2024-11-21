@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/editNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre del producto"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editDescripcion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Descripción del producto"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editPrecio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Precio"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editUnidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Unidad"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/editCantidad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Cantidad"
+        android:inputType="number" />
+
+    <!-- Label para el Spinner de Inventario -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/inventario_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingBottom="4dp" />
+
+    <!-- Spinner de Inventario -->
+    <Spinner
+        android:id="@+id/spinnerInventario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/inventario_prompt" />
+
+    <!-- Label para el Spinner de Subcategoría -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/subcategoria_label"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:paddingTop="16dp"
+        android:paddingBottom="4dp" />
+
+    <!-- Spinner de Subcategoría -->
+    <Spinner
+        android:id="@+id/spinnerSubcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:prompt="@string/subcategoria_prompt" />
+
+    <!-- Botón para agregar imágenes -->
+    <Button
+        android:id="@+id/btnAgregarFoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Agregar Foto" />
+
+    <!-- RecyclerView para mostrar las imágenes seleccionadas -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerFotos"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp"
+        android:scrollbars="vertical" />
+
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Producto" />
+
+</LinearLayout>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Permisos necesarios para manejo de imágenes -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.INTERNET" /> <!-- Si cargas imágenes desde URLs -->
+
+    <!-- Nota: Para Android 10 o superior, no se necesita READ_EXTERNAL_STORAGE al trabajar con `MediaStore` y Scoped Storage -->
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.App_tester"
+        tools:targetApi="31">
+
+        <!-- Login Activity -->
+        <activity
+            android:name=".presentacion.LoginActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Registrar Usuario Activity -->
+        <activity
+            android:name=".presentacion.RegistrarUsuarioActivity"
+            android:exported="true" />
+
+        <!-- Registrar Producto Activity -->
+        <activity
+            android:name=".presentacion.RegistrarProductoActivity"
+            android:exported="true" />
+
+        <!-- Lista de Productos Activity -->
+        <activity
+            android:name=".presentacion.ListaProductosActivity"
+            android:exported="true" />
+
+        <!-- Menú Principal Activity -->
+        <activity
+            android:name=".presentacion.MenuPrincipalActivity"
+            android:theme="@style/Theme.App_tester"
+            android:exported="true" />
+
+        <!-- Registrar Inventario Activity -->
+        <activity
+            android:name=".presentacion.RegistrarInventarioActivity"
+            android:exported="true" />
+
+        <!-- Ver Historial de Inventario Activity -->
+        <activity
+            android:name=".presentacion.VerTodoInventarioActivity"
+            android:exported="true" />
+
+        <!-- Registrar Categoría Activity -->
+        <activity
+            android:name=".presentacion.RegistrarCategoriaActivity"
+            android:exported="true" />
+
+        <!-- Registrar Subcategoría Activity -->
+        <activity
+            android:name=".presentacion.RegistrarSubcategoriaActivity"
+            android:exported="true" />
+
+        <!-- Ver Subcategorías Activity -->
+        <activity
+            android:name=".presentacion.VerSubcategoriaActivity"
+            android:exported="true" />
+
+        <!-- MainActivity -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+
+    </application>
+
+</manifest>

@@ -1,0 +1,32 @@
+<!-- activity_registrar_subcategoria.xml -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <EditText
+        android:id="@+id/editNombreSubcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nombre de la Subcategoría"/>
+
+    <EditText
+        android:id="@+id/editEstadoSubcategoria"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Estado de la Subcategoría"/>
+
+    <Spinner
+        android:id="@+id/spinnerCategorias"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Registrar Subcategoría"/>
+</LinearLayout>
